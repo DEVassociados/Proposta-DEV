@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Proposta DEV.associados - Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js@4/turn.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #flipbook {
+      width: 90vw;
+      height: 90vh;
+    }
+    #flipbook .page {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+    }
+    #flipbook .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+<div id="flipbook">
+  <div class="page"><img src="flipbook_pages/page_001.jpg" alt="Página 1"></div><div class="page"><img src="flipbook_pages/page_002.jpg" alt="Página 2"></div><div class="page"><img src="flipbook_pages/page_003.jpg" alt="Página 3"></div><div class="page"><img src="flipbook_pages/page_004.jpg" alt="Página 4"></div><div class="page"><img src="flipbook_pages/page_005.jpg" alt="Página 5"></div><div class="page"><img src="flipbook_pages/page_006.jpg" alt="Página 6"></div><div class="page"><img src="flipbook_pages/page_007.jpg" alt="Página 7"></div><div class="page"><img src="flipbook_pages/page_008.jpg" alt="Página 8"></div><div class="page"><img src="flipbook_pages/page_009.jpg" alt="Página 9"></div><div class="page"><img src="flipbook_pages/page_010.jpg" alt="Página 10"></div><div class="page"><img src="flipbook_pages/page_011.jpg" alt="Página 11"></div><div class="page"><img src="flipbook_pages/page_012.jpg" alt="Página 12"></div><div class="page"><img src="flipbook_pages/page_013.jpg" alt="Página 13"></div><div class="page"><img src="flipbook_pages/page_014.jpg" alt="Página 14"></div><div class="page"><img src="flipbook_pages/page_015.jpg" alt="Página 15"></div><div class="page"><img src="flipbook_pages/page_016.jpg" alt="Página 16"></div><div class="page"><img src="flipbook_pages/page_017.jpg" alt="Página 17"></div><div class="page"><img src="flipbook_pages/page_018.jpg" alt="Página 18"></div><div class="page"><img src="flipbook_pages/page_019.jpg" alt="Página 19"></div><div class="page"><img src="flipbook_pages/page_020.jpg" alt="Página 20"></div>
+</div>
+
+<script>
+  $('#flipbook').turn({
+    width: '100%',
+    height: '100%',
+    autoCenter: true,
+    elevation: 50,
+    gradients: true
+  });
+</script>
+
+</body>
+</html>
